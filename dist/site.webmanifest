@@ -1,0 +1,16 @@
+{
+  "name": "Xuro CreativeLabs",
+  "short_name": "Xuro",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050812",
+  "theme_color": "#050812",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }
+  ]
+}
+
