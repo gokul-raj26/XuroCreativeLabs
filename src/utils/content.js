@@ -128,9 +128,9 @@ export const teamMembers = [
 
 export const contactLinks = {
   whatsapp:
-    'https://wa.me/919876543210?text=Hi%20Xuro%20CreativeLabs%2C%20I%20want%20to%20discuss%20a%20new%20project.',
+    'https://wa.me/918122016648?text=Hi%20Xuro%20CreativeLabs%2C%20I%20want%20to%20discuss%20a%20new%20project.',
   telegram: 'https://t.me/xurocreativelabs',
-  email: 'hello@xuro.studio'
+  email: 'xurocreativelabs@gmail.com'
 };
 
 export const footerCols = [

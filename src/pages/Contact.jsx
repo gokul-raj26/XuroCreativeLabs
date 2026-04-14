@@ -40,7 +40,7 @@ export default function Contact() {
               rel="noreferrer"
             >
               <p className="font-heading text-xs uppercase tracking-[0.16em] text-neon">WhatsApp</p>
-              <p className="mt-1 text-sm text-muted">+91 98765 43210</p>
+              <p className="mt-1 text-sm text-muted">+91 8122016648</p>
             </a>
 
             <a
