@@ -6,7 +6,7 @@ const initialForm = {
   firstName: '',
   lastName: '',
   email: '',
-  service: 'Brand Identity',
+  service: 'Brand & Experience Lab',
   budget: '5000-10000',
   message: ''
 };
@@ -99,11 +99,11 @@ export default function ContactForm() {
             onChange={onChange}
             className="mt-2 w-full border border-[rgba(31,60,222,0.3)] bg-bg2 px-4 py-3 text-sm text-text outline-none transition focus:border-electric"
           >
-            <option>Brand Identity</option>
-            <option>Motion Design</option>
-            <option>Web Design and Dev</option>
-            <option>Social Content</option>
-            <option>Creative Strategy</option>
+            <option>Brand & Experience Lab</option>
+            <option>Product & Tech Lab</option>
+            <option>Content & Growth Lab</option>
+            <option>Launch Lab</option>
+            <option>AI & Automation Lab</option>
           </select>
         </label>
 
