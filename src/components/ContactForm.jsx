@@ -135,7 +135,7 @@ export default function ContactForm() {
         />
       </label>
 
-      <button type="submit" disabled={status === 'sending'} className="btn-primary mt-6 disabled:opacity-70">
+      <button type="submit" disabled={status === 'sending'} className={`${status === 'sent' ? 'btn-primary' : 'btn-red'} mt-6 disabled:opacity-70`}>
         {status === 'sending' ? 'Sending...' : 'Send Message'}
       </button>
 

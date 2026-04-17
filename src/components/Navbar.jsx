@@ -59,8 +59,8 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <NavLink to="/contact" className="btn-primary hidden text-[11px] md:inline-flex">
-              Start a Project
+            <NavLink to="/contact" className="btn-red hidden text-[11px] md:inline-flex">
+              Get Started
             </NavLink>
             <button
               type="button"
@@ -92,8 +92,8 @@ export default function Navbar() {
               </li>
             ))}
             <li className="pt-2">
-              <NavLink to="/contact" onClick={() => setOpen(false)} className="btn-primary w-full text-center text-[11px]">
-                Start a Project
+              <NavLink to="/contact" onClick={() => setOpen(false)} className="btn-red w-full text-center text-[11px]">
+                Get Started
               </NavLink>
             </li>
           </ul>

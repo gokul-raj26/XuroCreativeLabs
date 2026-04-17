@@ -98,6 +98,11 @@ img {
     clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   }
 
+  .btn-red {
+    @apply inline-flex items-center justify-center bg-[var(--cta)] px-6 py-4 font-heading text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:scale-[1.02] hover:shadow-electric;
+    clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  }
+
   .btn-outline {
     @apply inline-flex items-center justify-center border border-[rgba(31,60,222,0.35)] bg-[rgba(31,60,222,0.08)] px-6 py-4 font-heading text-xs font-bold uppercase tracking-[0.14em] text-text transition hover:border-neon hover:text-neon;
     clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);

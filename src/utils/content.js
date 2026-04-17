@@ -40,33 +40,64 @@ export const timeline = [
 export const services = [
   {
     icon: 'BI',
-    title: 'Brand Identity',
-    desc: 'Logos, visual systems, and brand guidelines built to be iconic and scalable.'
+    title: 'Brand & Experience Lab',
+    tagline: 'Design that doesn’t just look good — it performs.',
+    desc: 'We craft high-impact brand identities and user experiences that turn visitors into customers and ideas into memorable brands.',
+    points: [
+      'Brand Identity & Logo Systems',
+      'Visual Identity Design',
+      'UX/UI Design',
+      'Brand Guidelines'
+    ]
   },
   {
-    icon: 'MD',
-    title: 'Motion Design',
-    desc: 'Brand films, social animations, and explainers engineered to stop scrolling.'
+    
+    title: 'Product & Tech Lab',
+    tagline: 'Built for speed. Designed to scale.',
+    desc: 'We build fast, scalable digital products engineered to support growth, performance, and long-term success.',
+    points: [
+      'High-Performance Websites',
+      'Web & Mobile Applications',
+      'SaaS Platforms & Dashboards',
+      'API Development & Backend Systems'
+    ]
   },
   {
-    icon: 'WD',
-    title: 'Web Design and Dev',
-    desc: 'High-performance websites with premium interfaces and conversion-first UX.'
+    icon: 'CG',
+    title: 'Content & Growth Lab',
+    tagline: 'Attention → Engagement → Growth.',
+    desc: 'We help you attract, engage, and convert your audience through strategic content and growth-driven systems.',
+    points: [
+      'Short-form Content (Reels / Shorts)',
+      'Video Editing & Production',
+      'Social Media Growth Systems',
+      'Personal Branding Strategy'
+    ]
   },
   {
-    icon: 'SC',
-    title: 'Social Content',
-    desc: 'Reels, carousels, and feed systems that keep brand voice consistent and sharp.'
+    icon: 'LL',
+    title: 'Launch Lab',
+    tagline: 'From idea to launch — faster than ever.',
+    desc: 'We help you turn ideas into real products by handling everything from branding to launch and growth setup.',
+    points: [
+      'MVP Development',
+      'Startup Branding',
+      'Landing Pages & Funnels',
+      'Go-to-Market Strategy'
+    ]
   },
   {
-    icon: 'PP',
-    title: 'Print and Packaging',
-    desc: 'Packaging and collateral that own shelf presence and communicate value quickly.'
-  },
-  {
-    icon: 'CS',
-    title: 'Creative Strategy',
-    desc: 'Positioning, campaign architecture, and launch strategy aligned to growth goals.'
+    icon: 'AA',
+    title: 'AI & Automation Lab',
+    tagline: 'Work smarter. Scale faster.',
+    desc: 'We design intelligent systems that automate workflows, enhance customer experience, and reduce manual effort for businesses and creators.',
+    points: [
+      'AI Chatbot Development',
+      'Business Process Automation',
+      'WhatsApp / Instagram Automation',
+      'Creator Workflow Systems',
+      'Lead Generation Automation'
+    ]
   }
 ];
 
