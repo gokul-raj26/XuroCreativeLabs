@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { navLinks } from '../utils/content';
-import logo from '../assets/logo.png';
+import logo from '../assets/Xuro.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -34,11 +34,11 @@ export default function Navbar() {
               alt="Xuro CreativeLabs logo"
               width="36"
               height="36"
-              className="h-9 w-9 rounded-sm object-cover"
+              className="h-9 w-9 object-cover"
               decoding="async"
               fetchPriority="high"
             />
-            <span className="hidden font-heading text-lg font-extrabold tracking-tight text-neon sm:inline">Xuro CreativeLabs</span>
+            {/* <span className="hidden font-heading text-lg font-extrabold tracking-tight text-neon sm:inline">Xuro CreativeLabs</span> */}
           </NavLink>
 
           <ul className="hidden items-center gap-8 md:flex">
