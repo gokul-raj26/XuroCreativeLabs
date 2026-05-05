@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { navLinks } from '../utils/content';
-import logo from '../assets/Xuro.png';
+import logo from '../assets/offcl/icon.svg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,32 +22,32 @@ export default function Navbar() {
     <header
       className={`fixed inset-x-0 top-0 z-50 border-b transition ${
         scrolled
-          ? 'border-[rgba(31,60,222,0.35)] bg-[rgba(5,8,18,0.82)] backdrop-blur-2xl'
+          ? 'border-[rgba(31,60,222,0.35)] bg-[rgba(5,8,18,0.92)] backdrop-blur-2xl'
           : 'border-transparent bg-transparent'
       }`}
     >
-      <nav className="mx-auto w-full max-w-7xl px-5 md:px-10" aria-label="Main">
-        <div className="flex h-20 items-center justify-between">
+      <nav className="mx-auto w-full max-w-7xl px-[5%] py-[20px]" aria-label="Main">
+        <div className="flex h-12 items-center justify-between">
           <NavLink to="/" className="flex items-center gap-3" onClick={() => setOpen(false)} aria-label="Go to homepage">
-            <img
-              src={logo}
-              alt="Xuro CreativeLabs logo"
-              width="36"
-              height="36"
-              className="h-9 w-9 object-cover"
-              decoding="async"
-              fetchPriority="high"
-            />
-            {/* <span className="hidden font-heading text-lg font-extrabold tracking-tight text-neon sm:inline">Xuro CreativeLabs</span> */}
+             <img
+                src={logo}
+                alt="Xuro CreativeLabs logo"
+                width="42"
+                height="42"
+                className="h-10 w-10 rounded-sm object-cover"
+                fetchPriority="high"
+                decoding="async"
+              />
+             <span className="hidden font-heading text-lg font-extrabold tracking-tight text-neon sm:inline">Xuro CreativeLabs</span> 
           </NavLink>
-
+          
           <ul className="hidden items-center gap-8 md:flex">
             {navLinks.map((item) => (
               <li key={item.to}>
                 <NavLink
                   to={item.to}
                   className={({ isActive }) =>
-                    `font-heading text-xs uppercase tracking-[0.18em] transition ${
+                    `font-heading text-[13px] uppercase tracking-[0.12em] transition ${
                       isActive ? 'text-neon' : 'text-muted hover:text-text'
                     }`
                   }
@@ -59,12 +59,12 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <NavLink to="/contact" className="btn-red hidden text-[11px] md:inline-flex">
+            <NavLink to="/contact" className="btn-red hidden md:inline-flex">
               Get Started
             </NavLink>
             <button
               type="button"
-              className="inline-flex border border-[rgba(31,60,222,0.45)] px-3 py-2 text-[11px] font-heading uppercase tracking-[0.14em] text-neon md:hidden"
+              className="inline-flex border border-[rgba(31,60,222,0.45)] px-3 py-2 text-[13px] font-heading uppercase tracking-[0.14em] text-neon md:hidden"
               aria-expanded={open}
               aria-label="Toggle mobile menu"
               onClick={() => setOpen((prev) => !prev)}
@@ -82,7 +82,7 @@ export default function Navbar() {
                   to={item.to}
                   onClick={() => setOpen(false)}
                   className={({ isActive }) =>
-                    `block py-2 font-heading text-xs uppercase tracking-[0.16em] ${
+                    `block py-2 font-heading text-[13px] uppercase tracking-[0.16em] ${
                       isActive ? 'text-neon' : 'text-muted'
                     }`
                   }

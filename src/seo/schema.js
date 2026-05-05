@@ -3,7 +3,7 @@ export const organizationSchema = {
   '@type': 'Organization',
   name: 'Xuro CreativeLabs',
   url: 'https://xurocreativelabs.com',
-  logo: 'https://xurocreativelabs.com/logo.png',
+  logo: 'https://xurocreativelabs.com/LogoBlue.svg',
   email: 'hello@xuro.studio',
   sameAs: [
     'https://www.linkedin.com',

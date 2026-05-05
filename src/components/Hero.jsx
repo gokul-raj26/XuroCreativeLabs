@@ -8,22 +8,40 @@ export default function Hero() {
   const { x, y } = useParallax(0.025);
 
   return (
-    <section className="relative overflow-hidden pt-32">
-      <div className="section-shell min-h-[88vh] py-16 md:py-24">
-        <div className="grid items-center gap-12 lg:grid-cols-[1fr_1fr]">
-          <motion.div variants={staggerContainer} initial="hidden" animate="show" className="max-w-3xl">
+    <section className="relative overflow-hidden pt-[120px] pb-[80px]">
+      <div className="section-shell hero-shell min-h-screen">
+        <div className="grid items-center gap-[60px] lg:grid-cols-[1fr_1fr]">
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            animate="show"
+            className="max-w-3xl"
+          >
             <motion.p variants={fadeUp} className="section-tag">
               Rocket-Driven Creative Agency
             </motion.p>
-            <motion.h1 variants={fadeUp} className="section-title text-5xl md:text-7xl">
-              We Build <span className="text-neon drop-shadow-[0_0_16px_rgba(230,242,29,0.45)]">Bold</span> and{' '}
-              <span className="text-electric drop-shadow-[0_0_20px_rgba(31,60,222,0.55)]">Beautiful</span>
+            <motion.h1
+              variants={fadeUp}
+              className="section-title font-extrabold text-[clamp(48px,7vw,96px)] leading-[1.02] tracking-[-0.02em]"
+            >
+              We Build{" "}
+              <span className="text-neon drop-shadow-[0_0_16px_rgba(230,242,29,0.45)]">
+                Bold
+              </span>{" "}
+              and{" "}
+              <span className="text-electric drop-shadow-[0_0_20px_rgba(31,60,222,0.55)]">
+                Beautiful
+              </span>
             </motion.h1>
             <motion.p variants={fadeUp} className="section-subtitle max-w-xl">
-              Xuro CreativeLabs transforms brands into visual powerhouses. We craft identities, digital
-              experiences, and campaigns that hit hard and perform.
+              Xuro CreativeLabs transforms brands into visual powerhouses. We
+              craft identities, digital experiences, and campaigns that hit hard
+              and perform.
             </motion.p>
-            <motion.div variants={fadeUp} className="mt-10 flex flex-wrap gap-4">
+            <motion.div
+              variants={fadeUp}
+              className="mt-10 flex flex-wrap gap-4"
+            >
               <Link to="/projects" className="btn-primary">
                 View Our Work
               </Link>

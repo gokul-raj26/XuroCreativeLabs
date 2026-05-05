@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { footerCols, contactLinks } from '../utils/content';
-import logo from '../assets/xurologo.svg';
+import logo from '../assets/offcl/icon.svg';
 
 export default function Footer() {
   return (
@@ -9,15 +9,15 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-[2fr_1fr_1fr]">
           <div>
             <div className="flex items-center gap-3">
-              <img
-                src={logo}
-                alt="Xuro CreativeLabs logo"
-                width="42"
-                height="42"
-                className="h-10 w-10 rounded-sm object-cover"
-                loading="lazy"
-                decoding="async"
-              />
+            <img
+  src={logo}
+  alt="Xuro CreativeLabs logo"
+  width="36"
+  height="36"
+  className="h-9 w-9 object-contain"
+  loading="lazy"
+  decoding="async"
+/>
               <h2 className="font-heading text-2xl font-extrabold text-neon">Xuro CreativeLabs</h2>
             </div>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
