@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { footerCols, contactLinks } from '../utils/content';
-import logo from '../assets/offcl/icon.svg';
+import logo from '../assets/offcl/Icon.svg';
 
 export default function Footer() {
   return (
