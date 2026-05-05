@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { navLinks } from '../utils/content';
-import logo from '../assets/offcl/icon.svg';
+import logo from '../assets/offcl/Icon.svg';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
