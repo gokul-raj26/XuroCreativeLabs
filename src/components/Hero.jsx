@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 import { fadeUp, staggerContainer } from '../animations/motionVariants';
 import useParallax from '../hooks/useParallax';
-import HeroRobotScene from './HeroRobotScene';
+
+const HeroRobotScene = lazy(() => import('./HeroRobotScene'));
 
 export default function Hero() {
   const { x, y } = useParallax(0.025);
@@ -51,7 +53,6 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Temporarily commented out to debug blank page */}
           <motion.div
             aria-hidden="true"
             className="relative mx-auto h-[360px] w-full max-w-[560px] md:h-[430px] lg:h-[520px]"
@@ -60,10 +61,10 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, ease: [0.21, 1, 0.25, 1], delay: 0.2 }}
           >
-            <div className="relative h-full w-full">
+            <Suspense fallback={<div className="flex h-full items-center justify-center text-muted">Loading 3D scene...</div>}>
               <HeroRobotScene />
-            </div>
-          </motion.div> 
+            </Suspense>
+          </motion.div>
         </div>
       </div>
     </section>
