@@ -51,7 +51,8 @@ export default function Hero() {
             </motion.div>
           </motion.div>
 
-          <motion.div
+          {/* Temporarily commented out to debug blank page */}
+          {/* <motion.div
             aria-hidden="true"
             className="relative mx-auto h-[360px] w-full max-w-[560px] md:h-[430px] lg:h-[520px]"
             style={{ transform: `translate3d(${x + 26}px, ${y}px, 0)` }}
@@ -62,7 +63,7 @@ export default function Hero() {
             <div className="relative h-full w-full">
               <HeroRobotScene />
             </div>
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>
