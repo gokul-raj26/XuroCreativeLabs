@@ -11,6 +11,15 @@ const Services = lazy(() => import('./pages/Services'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Contact = lazy(() => import('./pages/Contact'));
 
+// SEO Landing Pages
+const BestFreelancingCompanyIndia = lazy(() => import('./pages/BestFreelancingCompanyIndia'));
+const CreativeAgencyForStartups = lazy(() => import('./pages/CreativeAgencyForStartups'));
+const WhatsAppAutomationAgency = lazy(() => import('./pages/WhatsAppAutomationAgency'));
+const WebsiteDevelopmentSmallBusiness = lazy(() => import('./pages/WebsiteDevelopmentSmallBusiness'));
+const DoctorClinicAutomation = lazy(() => import('./pages/DoctorClinicAutomation'));
+const AffordableBrandingAgency = lazy(() => import('./pages/AffordableBrandingAgency'));
+const FastWebsiteDevelopment = lazy(() => import('./pages/FastWebsiteDevelopment'));
+
 function AppShell() {
   useScrollToTop();
 
@@ -36,6 +45,16 @@ function AppShell() {
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            
+            {/* SEO Landing Pages */}
+            <Route path="/best-freelancing-company-in-india" element={<BestFreelancingCompanyIndia />} />
+            <Route path="/creative-agency-startups" element={<CreativeAgencyForStartups />} />
+            <Route path="/whatsapp-automation-agency" element={<WhatsAppAutomationAgency />} />
+            <Route path="/website-development-small-business" element={<WebsiteDevelopmentSmallBusiness />} />
+            <Route path="/doctor-clinic-automation" element={<DoctorClinicAutomation />} />
+            <Route path="/affordable-branding-agency" element={<AffordableBrandingAgency />} />
+            <Route path="/fast-website-development" element={<FastWebsiteDevelopment />} />
+            
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>

@@ -2,8 +2,8 @@ export const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Xuro CreativeLabs',
-  url: 'https://xurocreativelabs.com',
-  logo: 'https://xurocreativelabs.com/LogoBlue.svg',
+  url: 'https://xurocreativelabs.in',
+  logo: 'https://xurocreativelabs.in/LogoBlue.svg',
   email: 'hello@xuro.studio',
   sameAs: [
     'https://www.linkedin.com',
@@ -25,7 +25,7 @@ export const servicesSchema = {
   provider: {
     '@type': 'Organization',
     name: 'Xuro CreativeLabs',
-    url: 'https://xurocreativelabs.com'
+    url: 'https://xurocreativelabs.in'
   },
   serviceType: 'Creative Agency Services',
   areaServed: 'Worldwide',
