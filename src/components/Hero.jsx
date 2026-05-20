@@ -10,14 +10,14 @@ export default function Hero() {
   const { x, y } = useParallax(0.025);
 
   return (
-    <section className="relative overflow-hidden pt-[120px] pb-[80px]">
+    <section className="relative overflow-hidden pt-[120px] pb-[80px] isolate">
       <div className="section-shell hero-shell min-h-screen">
         <div className="grid items-center gap-[60px] lg:grid-cols-[1fr_1fr]">
           <motion.div
             variants={staggerContainer}
             initial="hidden"
             animate="show"
-            className="max-w-3xl"
+            className="relative z-20 max-w-3xl"
           >
             <motion.p variants={fadeUp} className="section-tag">
               Rocket-Driven Creative Agency
@@ -55,7 +55,7 @@ export default function Hero() {
 
           <motion.div
             aria-hidden="true"
-            className="relative mx-auto h-[360px] w-full max-w-[560px] md:h-[430px] lg:h-[520px]"
+            className="absolute right-[1%] top-1/6 z-0 h-[360px] w-full max-w-[560px] -translate-y-1/2 md:h-[430px] lg:h-[520px]"
             style={{ transform: `translate3d(${x + 26}px, ${y}px, 0)` }}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
