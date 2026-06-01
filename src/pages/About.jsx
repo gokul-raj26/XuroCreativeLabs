@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import SEO from '../seo/SEO';
 import SectionWrapper from '../components/SectionWrapper';
-import TeamCard from '../components/TeamCard';
+import TeamSection from '../components/TeamSection';
 import { fadeUp, staggerContainer } from '../animations/motionVariants';
-import { orgSchemaScript, teamMembers, timeline } from '../utils/content';
+import { orgSchemaScript, timeline } from '../utils/content';
 
 export default function About() {
   return (
@@ -58,33 +58,7 @@ export default function About() {
           </motion.div>
         </div>
 
-        <motion.div
-          className="mt-16"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <div className="section-tag">Meet The Team</div>
-          <h2 className="section-title text-3xl md:text-5xl">
-            The Minds Behind <span className="text-neon">Xuro</span>
-          </h2>
-          <p className="section-subtitle max-w-2xl">
-            A focused creative team blending strategy, storytelling, and execution to deliver bold outcomes.
-          </p>
-
-          <motion.div
-            className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3"
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            {teamMembers.map((member) => (
-              <TeamCard key={member.name} member={member} />
-            ))}
-          </motion.div>
-        </motion.div>
+        <TeamSection />
       </SectionWrapper>
     </>
   );

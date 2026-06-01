@@ -2,6 +2,7 @@ import { organizationSchema } from '../seo/schema';
 import diva from '../assets/diva.png';
 import gokul from '../assets/Gokul.png';
 import ja from '../assets/ja.png';
+import Guna from '../assets/guna.png';
 
 export const navLinks = [
   { label: 'Home', to: '/' },
@@ -138,6 +139,7 @@ export const teamMembers = [
     name: 'Diva',
     role: 'Creative Director',
     image: diva,
+    handle: '@diva',
     linkedin: 'https://www.linkedin.com',
     instagram: 'https://www.instagram.com'
   },
@@ -145,6 +147,7 @@ export const teamMembers = [
     name: 'Gokul',
     role: 'Brand Strategist',
     image: gokul,
+    handle: '@gokul',
     linkedin: 'https://www.linkedin.com',
     instagram: 'https://www.instagram.com'
   },
@@ -152,6 +155,15 @@ export const teamMembers = [
     name: 'JA',
     role: 'Visual Designer',
     image: ja,
+    handle: '@ja',
+    linkedin: 'https://www.linkedin.com',
+    instagram: 'https://www.instagram.com'
+  },
+    {
+    name: 'Guna',
+    role: 'Creative Director',
+    image: Guna,
+    handle: '@guna',
     linkedin: 'https://www.linkedin.com',
     instagram: 'https://www.instagram.com'
   }

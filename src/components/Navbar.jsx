@@ -35,7 +35,7 @@ export default function Navbar() {
                 width="42"
                 height="42"
                 className="h-10 w-10 rounded-sm object-cover"
-                fetchPriority="high"
+                fetchpriority="high"
                 decoding="async"
               />
              <span className="hidden font-heading text-lg font-extrabold tracking-tight text-neon sm:inline">Xuro CreativeLabs</span> 

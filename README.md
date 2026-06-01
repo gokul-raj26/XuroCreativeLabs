@@ -1,142 +1,138 @@
-# Xuro CreativeLabs Website
+# Xuro CreativeLabs
 
-Production-ready multi-page React + Vite website for **Xuro CreativeLabs**, built with a neon-dark visual system, reusable component architecture, SEO foundation, and performance-focused frontend patterns.
+A premium neon-dark creative agency website built with React, Vite, Tailwind CSS, and Framer Motion.
 
-## 1. Project Overview
+## Fonts used
 
-Xuro CreativeLabs is designed as a premium creative agency website with:
+- **Syne** — used for headings and brand typography
+- **DM Sans** — used for body copy and UI text
 
-- Futuristic neon-dark brand language
-- Multi-page routing (`/`, `/about`, `/services`, `/projects`, `/contact`)
-- Framer Motion-driven animations
-- Reusable glassmorphism components
-- SEO metadata and schema support
-- Contact workflow with EmailJS fallback to `mailto`
-- Vercel-ready deployment config
+These fonts are loaded from Google Fonts in `index.html` and applied via `src/styles/index.css` and `tailwind.config.js`.
 
-## 2. Tech Stack
+## Quick Overview
 
-- React 18
-- Vite 5
-- React Router DOM 6
-- Tailwind CSS 3
-- Framer Motion
-- React Helmet Async
-- EmailJS browser SDK
+- React 18 + Vite 5 application
+- Tailwind CSS 3 styling system
+- Animated page sections with Framer Motion
+- SEO-ready metadata and schema
+- Lightweight responsive layout
+- Glassmorphism + premium neon dark theme
 
-## 3. Folder Structure
+## Project status
 
-```text
-xuro-creativelabs/
-  public/
-    logofav.png
-    logo.png
-    logo.svg
-    og-image.svg
-    robots.txt
-    site.webmanifest
-    sitemap.xml
+- Core site structure and responsive pages are implemented
+- Animations, SEO metadata, and reusable component system are live
+- Contact workflow supports EmailJS and `mailto` fallback
+- Recommended next steps: finalize copy, production assets, and launch QA
 
-  src/
-    animations/
-      motionVariants.js
-
-    assets/
-      diva.png
-      favi icon.png
-      Gokul.png
-      ja.png
-      logo.png
-      logofav.png
-
-    components/
-      ContactForm.jsx
-      CustomCursor.jsx
-      Footer.jsx
-      Hero.jsx
-      HeroRobotScene.jsx
-      Navbar.jsx
-      ProjectCard.jsx
-      SectionWrapper.jsx
-      ServiceCard.jsx
-      Stats.jsx
-      TeamCard.jsx
-      TestimonialCard.jsx
-
-    hooks/
-      useParallax.js
-      useScrollToTop.js
-
-    pages/
-      About.jsx
-      Contact.jsx
-      Home.jsx
-      Projects.jsx
-      Services.jsx
-
-    seo/
-      schema.js
-      SEO.jsx
-
-    styles/
-      index.css
-
-    utils/
-      content.js
-
-    App.jsx
-    main.jsx
-
-  index.html
-  package.json
-  postcss.config.js
-  tailwind.config.js
-  vercel.json
-  vite.config.js
-  README.md
-```
-
-## 4. Setup and Local Development
-
-### Prerequisites
-
-- Node.js 18+ (recommended)
-- npm 9+
-
-### Install
+## Quick Start
 
 ```bash
 npm install
-```
-
-### Start development server
-
-```bash
 npm run dev
 ```
 
-### Build for production
+### Build
 
 ```bash
 npm run build
 ```
 
-### Preview production build
+### Preview
 
 ```bash
 npm run preview
 ```
 
-## 5. Available Scripts
+## Project Structure
 
-- `npm run dev`: Starts Vite dev server
-- `npm run build`: Creates optimized production build
-- `npm run preview`: Serves production build locally
-- `npm run lint`: Runs ESLint across JS/JSX files
+```text
+src/
+  animations/
+    motionVariants.js
+  assets/
+    diva.png
+    Gokul.png
+    ja.png
+    logo.png
+    logofav.png
+  components/
+    ContactForm.jsx
+    CustomCursor.jsx
+    Footer.jsx
+    Hero.jsx
+    HeroRobotScene.jsx
+    Navbar.jsx
+    ProjectCard.jsx
+    SectionWrapper.jsx
+    ServiceCard.jsx
+    Stats.jsx
+    TeamCard.jsx
+    TestimonialCard.jsx
+  hooks/
+    useParallax.js
+    useScrollToTop.js
+  pages/
+    About.jsx
+    Contact.jsx
+    Home.jsx
+    Projects.jsx
+    Services.jsx
+  seo/
+    schema.js
+    SEO.jsx
+  styles/
+    index.css
+  utils/
+    content.js
+  App.jsx
+  main.jsx
+index.html
+package.json
+tailwind.config.js
+vite.config.js
+README.md
+```
 
-## 6. Environment Variables
+## Core Pages
 
-Create a `.env` file in the project root when enabling EmailJS:
+- `/` — Home
+- `/about` — About
+- `/services` — Services
+- `/projects` — Projects
+- `/contact` — Contact
+
+## Styling and Design Tokens
+
+### Brand colors
+
+- `#050812` — page background
+- `#E6F21D` — neon highlight
+- `#1F3CDE` — electric primary
+- `#FF3B2F` — CTA accent
+
+### Font setup
+
+- `body` uses `font-family: 'DM Sans', sans-serif;`
+- `heading` classes use `font-heading` mapped to `['Syne', 'sans-serif']`
+- Google Fonts import is in `index.html`
+
+## How fonts are applied
+
+- `index.html` imports the fonts from Google Fonts
+- `src/styles/index.css` sets the default body font to DM Sans
+- Tailwind `font-heading` in `tailwind.config.js` maps to Syne
+
+## Useful Scripts
+
+- `npm run dev` — start development server
+- `npm run build` — production build
+- `npm run preview` — preview the built app
+- `npm run lint` — lint JS/JSX files
+
+## Environment Variables
+
+For EmailJS integration, create a `.env` file:
 
 ```bash
 VITE_EMAILJS_SERVICE_ID=your_service_id
@@ -144,99 +140,13 @@ VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-Behavior:
+If these variables are not set, the contact form falls back to a `mailto:` action.
 
-- If EmailJS variables are present: form submits through EmailJS.
-- If missing: form gracefully falls back to `mailto:hello@xuro.studio`.
+## Notes
 
-## 7. Routing and Page Architecture
-
-Routes are lazy-loaded in `src/App.jsx` for code splitting:
-
-- `/` -> `Home`
-- `/about` -> `About`
-- `/services` -> `Services`
-- `/projects` -> `Projects`
-- `/contact` -> `Contact`
-
-Shared layout composition:
-
-- Global background layers
-- Custom cursor
-- Sticky navbar
-- Footer
-
-## 8. Component System
-
-Core reusable blocks:
-
-- `Navbar`: sticky, blur-on-scroll, active route states, mobile menu
-- `Footer`: brand, links, social/contact actions
-- `SectionWrapper`: consistent section shell with heading system
-- `Hero`: animated flagship section
-- `Stats`: quick credibility metrics
-- `ServiceCard`, `ProjectCard`, `TestimonialCard`: reusable content cards
-- `TeamCard`: reusable member card with image + LinkedIn/Instagram icon links
-- `ContactForm`: validated lead form with async submission
-- `CustomCursor`: desktop glow cursor + trail interactions
-
-## 9. Styling and Theming
-
-Defined in `tailwind.config.js` and `src/styles/index.css`:
-
-- Brand colors:
-  - `#050812` (base)
-  - `#E6F21D` (neon highlight)
-  - `#1F3CDE` (electric primary)
-  - `#FF3B2F` (CTA accent)
-- Fonts:
-  - Syne (headings)
-  - DM Sans (body)
-- Utility classes:
-  - glass panels
-  - button styles
-  - section shells
-  - glow shadows
-  - custom keyframes
-
-## 10. Animation System
-
-Animation layers:
-
-- Framer Motion variants in `src/animations/motionVariants.js`
-- Scroll reveal and stagger patterns in sections/cards
-- Three.js hero robot animation in `src/components/HeroRobotScene.jsx`
-- Motion safety support via `prefers-reduced-motion` CSS rules
-
-### Hero 3D logic order
-
-`HeroRobotScene.jsx` is intentionally organized in this order:
-
-1. Scene constants (`MODEL_URL`, `CAMERA`, `ROBOT`, `LIGHTS`)
-2. Material and animation helpers
-3. React lifecycle (`useEffect`) setup:
-4. Scene, camera, renderer
-5. Lighting
-6. Model loading + recolor pass
-7. Animation mixer + default action (`Dance`)
-8. Render loop + resize handler
-9. Cleanup/dispose
-
-Camera angle can be tuned in `CAMERA.position` and `CAMERA.lookAt`.
-
-## 11. SEO and Metadata
-
-SEO implementation includes:
-
-- Per-page title/description/keywords via `src/seo/SEO.jsx`
-- Canonical tags
-- Open Graph tags
-- Twitter card tags
-- `robots.txt`
-- `sitemap.xml`
-- JSON-LD structured data in `src/seo/schema.js`:
-  - Organization schema
-  - Services schema
+- The project uses a reusable section system and premium glass-style components.
+- Animations are centralized in `src/animations/motionVariants.js`.
+- The site theme is intentionally minimal, futuristic, and highly responsive.
 
 ## 12. Accessibility
 
@@ -382,3 +292,12 @@ For larger teams, add:
 - Strict ESLint + Prettier config
 - Husky pre-commit hooks
 - CI pipeline for lint/build/test/deploy gates
+
+## Team Data Flow
+
+- **Source of truth:** Team members are defined only in [src/utils/content.js](src/utils/content.js).
+- **Rendering:** [src/components/TeamSection.jsx](src/components/TeamSection.jsx) imports `teamMembers` and maps them into UI.
+- **Card UI:** [src/components/TeamCard.jsx](src/components/TeamCard.jsx) renders each member and their social links.
+- **How to update:** Edit `teamMembers` in [src/utils/content.js](src/utils/content.js) (add `name`, `role`, `image`, `handle`, `linkedin`, `instagram`). Do not hardcode names or handles inside component files.
+
+This ensures content edits are centralized and UI components remain purely presentational.
