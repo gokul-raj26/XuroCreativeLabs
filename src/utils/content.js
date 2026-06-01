@@ -176,6 +176,34 @@ export const contactLinks = {
   email: 'xurocreativelabs@gmail.com'
 };
 
+export const faqs = [
+  {
+    question: 'How long does a project typically take?',
+    answer:
+      "It depends on the scope. A brand identity project takes 7–14 days. A website takes 2–4 weeks. An automation setup can take 1–2 weeks. We'll give you a clear timeline before we start."
+  },
+  {
+    question: 'Do you work with businesses outside India?',
+    answer:
+      'Yes. While we\'re based in India, we work with clients globally. All communication happens remotely via WhatsApp, email, or video call.'
+  },
+  {
+    question: 'What information do I need to share to get started?',
+    answer:
+      'Just tell us what you\'re trying to solve. We\'ll guide you through the rest with a short discovery conversation. You don\'t need to arrive with a perfect brief.'
+  },
+  {
+    question: 'Do you offer ongoing retainer services?',
+    answer:
+      'Yes. For content, automation maintenance, and design support, we offer monthly retainer arrangements. Ask us about it during your first conversation.'
+  },
+  {
+    question: 'What\'s the minimum budget to work with Xuro?',
+    answer:
+      'We work with budgets of all sizes. We\'ll always be upfront about what\'s achievable within your budget and won\'t overpromise.'
+  }
+];
+
 export const footerCols = [
   {
     title: 'Services',
