@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import SEO from '../seo/SEO';
 import SectionWrapper from '../components/SectionWrapper';
 import ContactForm from '../components/ContactForm';
-import FAQSection from '../components/FAQSection';
 import { contactLinks, orgSchemaScript } from '../utils/content';
 import { fadeUp } from '../animations/motionVariants';
 
@@ -64,7 +63,7 @@ export default function Contact() {
         </div>
       </SectionWrapper>
 
-      <FAQSection />
+     
     </>
   );
 }

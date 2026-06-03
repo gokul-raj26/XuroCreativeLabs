@@ -27,11 +27,10 @@ const LIGHTS = {
 
 const BRAND_PALETTE = [0x1f3cde, 0x2d57ff, 0x112b99, 0xe6f21d, 0xff3b2f];
 
-const SEQUENCE = [
-  { names: [ 'Running'], duration: 1.6, loop: THREE.LoopRepeat, moveForward: true },
-  { names: ['Jump'], duration: 1.4, loop: THREE.LoopOnce },
-  { names: ['Dance'], duration: 2.5, loop: THREE.LoopRepeat },
-  { names: ['Wave', 'Hello'], duration: 1.8, loop: THREE.LoopOnce }
+const DEFAULT_SEQUENCE = [
+  { names: ['Wave'], duration: 1.8, loop: THREE.LoopOnce },
+  { names: ['Thumbsup', 'ThumbsUp'], duration: 1.8, loop: THREE.LoopOnce },
+  { names: ['Yes'], duration: 1.8, loop: THREE.LoopOnce }
 ];
 
 function pickBrandColor(index) {
@@ -59,10 +58,19 @@ function findAction(actions, names) {
   for (const n of names) {
     if (actions[n]) return n;
   }
+
+  const lcNames = names.map((name) => name.toLowerCase());
+  for (const key of Object.keys(actions)) {
+    const lcKey = key.toLowerCase();
+    if (lcNames.some((name) => lcKey.includes(name) || name.includes(lcKey))) {
+      return key;
+    }
+  }
+
   return null;
 }
 
-export default function HeroRobotScene() {
+export default function HeroRobotScene({ sequence = DEFAULT_SEQUENCE }) {
   const mountRef = useRef(null);
 
   useEffect(() => {
@@ -156,8 +164,8 @@ export default function HeroRobotScene() {
           gltf.animations.forEach((clip) => {
             actions[clip.name] = mixer.clipAction(clip);
           });
-          const firstName = findAction(actions, SEQUENCE[0].names);
-          if (firstName) activateAction(firstName, SEQUENCE[0].loop);
+          const firstName = findAction(actions, sequence[0].names);
+          if (firstName) activateAction(firstName, sequence[0].loop);
         }
       },
       undefined,
@@ -172,7 +180,7 @@ export default function HeroRobotScene() {
       if (mixer) mixer.update(dt);
 
       if (robot && Object.keys(actions).length) {
-        const phase = SEQUENCE[phaseIndex];
+        const phase = sequence[phaseIndex];
         phaseTime += dt;
 
         const name = findAction(actions, phase.names);
@@ -187,7 +195,7 @@ export default function HeroRobotScene() {
 
         if (phaseTime >= phase.duration) {
           phaseTime = 0;
-          phaseIndex = (phaseIndex + 1) % SEQUENCE.length;
+          phaseIndex = (phaseIndex + 1) % sequence.length;
 
           // New sequence cycle: reset to start position before walking again.
           if (phaseIndex === 0) {

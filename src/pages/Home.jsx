@@ -7,6 +7,7 @@ import SectionWrapper from '../components/SectionWrapper';
 import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
 import TestimonialCard from '../components/TestimonialCard';
+import FAQSection from '../components/FAQSection';
 import { fadeUp, staggerContainer } from '../animations/motionVariants';
 import { orgSchemaScript, projects, services, testimonials, timeline } from '../utils/content';
 
@@ -106,7 +107,7 @@ export default function Home() {
           ))}
         </motion.div>
       </SectionWrapper>
-
+<FAQSection />
       <section className="bg-neon py-12">
         <motion.div
           className="section-shell py-6 text-center"
@@ -118,9 +119,9 @@ export default function Home() {
           <h2 className="font-heading text-3xl font-extrabold text-bg md:text-5xl">
             From Concept to Impact - We Hit Every Target
           </h2>
-          <Link to="/contact" className="mt-6 inline-flex border border-bg px-6 py-3 font-heading text-xs uppercase tracking-[0.16em] text-bg">
+          <a href="https://wa.me/918190027313" target="_blank" rel="noopener noreferrer" className="btn-primary mt-8">
             Launch with Xuro
-          </Link>
+          </a>
         </motion.div>
       </section>
     </>
