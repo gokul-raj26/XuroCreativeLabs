@@ -40,6 +40,7 @@ export const timeline = [
 
 export const services = [
   {
+    slug: 'brand-experience-lab',
     icon: 'BI',
     title: 'Brand & Experience Lab',
     tagline: 'Design that doesn’t just look good — it performs.',
@@ -52,7 +53,7 @@ export const services = [
     ]
   },
   {
-    
+    slug: 'product-tech-lab',
     title: 'Product & Tech Lab',
     tagline: 'Built for speed. Designed to scale.',
     desc: 'We build fast, scalable digital products engineered to support growth, performance, and long-term success.',
@@ -64,6 +65,7 @@ export const services = [
     ]
   },
   {
+    slug: 'content-growth-lab',
     icon: 'CG',
     title: 'Content & Growth Lab',
     tagline: 'Attention → Engagement → Growth.',
@@ -76,6 +78,7 @@ export const services = [
     ]
   },
   {
+    slug: 'launch-lab',
     icon: 'LL',
     title: 'Launch Lab',
     tagline: 'From idea to launch — faster than ever.',
@@ -88,6 +91,7 @@ export const services = [
     ]
   },
   {
+    slug: 'ai-automation-lab',
     icon: 'AA',
     title: 'AI & Automation Lab',
     tagline: 'Work smarter. Scale faster.',
@@ -135,38 +139,37 @@ export const testimonials = [
 ];
 
 export const teamMembers = [
+
   {
-    name: 'Diva',
-    role: 'Creative Director',
-    image: diva,
-    handle: '@diva',
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
-  },
-  {
-    name: 'Gokul',
-    role: 'Brand Strategist',
+    name: 'Gokul Raj ',
+    role: 'Founder & Strategy Lead',
     image: gokul,
-    handle: '@gokul',
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
-  },
-  {
-    name: 'JA',
-    role: 'Visual Designer',
-    image: ja,
-    handle: '@ja',
     linkedin: 'https://www.linkedin.com',
     instagram: 'https://www.instagram.com'
   },
     {
-    name: 'Guna',
-    role: 'Creative Director',
+    name: 'Divakar',
+    role: 'Creative Innovation Lead',
+    image: diva,
+    linkedin: 'https://www.linkedin.com',
+    instagram: 'https://www.instagram.com'
+  },
+    {
+    name: 'Jayashree ',
+    role: 'Client Success & Finance Lead',
+    image: ja,
+    linkedin: 'https://www.linkedin.com',
+    instagram: 'https://www.instagram.com'
+  },
+
+  {
+    name: 'Gunasekar',
+    role: 'Growth & Operations Lead',
     image: Guna,
-    handle: '@guna',
     linkedin: 'https://www.linkedin.com',
     instagram: 'https://www.instagram.com'
   }
+  
 ];
 
 export const contactLinks = {

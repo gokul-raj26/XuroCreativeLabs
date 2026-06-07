@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../seo/SEO';
 import SectionWrapper from '../components/SectionWrapper';
@@ -34,7 +35,9 @@ export default function Services() {
           viewport={{ once: true, amount: 0.2 }}
         >
           {services.map((service) => (
-            <ServiceCard key={service.title} service={service} />
+            <Link key={service.slug} to={`/labs/${service.slug}`} className="group">
+              <ServiceCard service={service} />
+            </Link>
           ))}
         </motion.div>
       </SectionWrapper>

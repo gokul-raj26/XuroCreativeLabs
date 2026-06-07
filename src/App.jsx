@@ -19,6 +19,7 @@ const WebsiteDevelopmentSmallBusiness = lazy(() => import('./pages/WebsiteDevelo
 const DoctorClinicAutomation = lazy(() => import('./pages/DoctorClinicAutomation'));
 const AffordableBrandingAgency = lazy(() => import('./pages/AffordableBrandingAgency'));
 const FastWebsiteDevelopment = lazy(() => import('./pages/FastWebsiteDevelopment'));
+const ServiceDetailPage = lazy(() => import('./pages/ServiceDetailPage'));
 
 function AppShell() {
   useScrollToTop();
@@ -54,7 +55,7 @@ function AppShell() {
             <Route path="/doctor-clinic-automation" element={<DoctorClinicAutomation />} />
             <Route path="/affordable-branding-agency" element={<AffordableBrandingAgency />} />
             <Route path="/fast-website-development" element={<FastWebsiteDevelopment />} />
-            
+            <Route path="/labs/:slug" element={<ServiceDetailPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
