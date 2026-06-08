@@ -3,18 +3,20 @@ India’s Fast-Growing Creative & Automation Agency for Modern Businesses
 
 Built by a collective of skilled freelancers, Xuro CreativeLabs helps startups, creators, clinics, and growing businesses launch faster, automate smarter, and scale creatively.
 
-Founded in 2023, Xuro was created with one mission:
+Our story began in 2021 as a solo freelance studio focused on premium design and dependable execution. We earned client trust through fast, polished delivery and practical results.
 
-to bring agency-level execution with freelancer-level speed and flexibility.
+By 2023, we had grown into a close-knit team of four specialists. We formalized our workflows, sharpened our service structure, and set the foundation for a modern agency built around collaboration and quality.
 
-In just a short time, we’ve successfully delivered 50+ projects, helping brands transform ideas into high-performing digital experiences through creative design, web development, automation systems, and growth-focused execution.
+In 2024, Xuro CreativeLabs launched as a startup-led creative lab. Today we operate as a collective of freelancers working together like an agency, while also creating real earning opportunities for students and emerging talent.
 
-We combine creative thinking, technical execution, and rapid delivery to solve modern business challenges without the slow processes and inflated costs of traditional agencies.
+We combine creative thinking, technical execution, and fast delivery to solve modern business challenges without the slow processes and inflated costs of traditional agencies.
 
 What We Do
-🎨 Brand & Design Lab
 
-We craft memorable brand systems designed to perform.
+Brand Experience Lab
+Crafting memorable brands and digital experiences.
+
+
 
 Services:
 
@@ -26,9 +28,8 @@ Creative Visual Assets
 
 We help businesses look premium and trustworthy from day one.
 
-⚡ Product & Development Lab
-
-Fast, scalable digital experiences engineered for growth.
+Product Tech Lab
+Engineering scalable products built for growth.
 
 Services:
 
@@ -41,9 +42,8 @@ Backend/API Systems
 
 We bridge the gap between beautiful design and functional technology.
 
-🤖 Automation Lab
-
-Smart systems that save time and increase conversions.
+AI Automation Lab
+Automating workflows. Amplifying results.
 
 Services:
 
@@ -56,9 +56,8 @@ Clinic & Doctor Automation
 
 We’ve helped healthcare professionals simplify customer communication and automate repetitive tasks.
 
-📱 Content & Growth Lab
-
-Creative systems that attract and convert.
+Content Growth Lab
+Transforming attention into engagement and revenue.
 
 Services:
 
@@ -70,9 +69,8 @@ Creative Campaign Assets
 
 We help businesses stay visible and grow consistently.
 
-🚀 Launch Lab
-
-From idea to launch.
+Launch Lab
+From concept to launch, faster and smarter.
 
 Perfect for:
 
@@ -126,13 +124,13 @@ professionalism of an agency
 speed of a startup team
 Our Journey
 
-2023 — Xuro CreativeLabs was founded by a team of independent freelancers
+2021 — Began as a trusted freelance studio, building client relationships through premium work and consistent delivery
 
-2024 — Expanded into automation, product development, and healthcare workflow solutions
+2023 — Evolved into a dedicated team of four, building stronger structures, collaboration, and agency-grade processes
 
-2025 — Delivered 50+ successful projects helping businesses scale faster through digital transformation
+2024 — Launched Xuro CreativeLabs as a startup creative lab, blending freelancer agility with a company-level service model and mentoring student talent
 
-Today — Growing into one of India’s most execution-focused creative labs
+Today — Delivering creative systems, automation, and launch-ready experiences with high-impact execution
 
 Numbers That Matter
 

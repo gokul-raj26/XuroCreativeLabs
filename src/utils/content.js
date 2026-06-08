@@ -21,29 +21,37 @@ export const stats = [
 
 export const timeline = [
   {
-    year: '2018',
-    text: 'Founded with a vision to redefine creative agency execution in South Asia.'
-  },
-  {
-    year: '2020',
-    text: 'Expanded into digital strategy and motion design, serving 50+ clients.'
+    year: '2021',
+    text: 'Started as a freelance studio, earning trust through premium creative work and dependable delivery.'
   },
   {
     year: '2023',
-    text: 'Won 10 industry awards and launched our UX and web engineering division.'
+    text: 'Grew into a dedicated team of four, built stronger structures, and refined our agency-quality workflows.'
   },
   {
     year: '2024',
-    text: 'Reached 140+ projects and expanded globally with a 30+ expert team.'
+    text: 'Launched Xuro CreativeLabs as a startup-led creative lab, blending freelancer agility with company-grade service.'
   }
 ];
 
 export const services = [
+   {
+    slug: 'ai-automation-lab',
+    title: 'AI Automation Lab',
+    tagline: 'Automating workflows. Amplifying results.',
+    desc: 'We design intelligent systems that automate workflows, enhance customer experience, and reduce manual effort for businesses and creators.',
+    points: [
+      'AI Chatbot Development',
+      'Business Process Automation',
+      'WhatsApp / Instagram Automation',
+      'Creator Workflow Systems',
+      'Lead Generation Automation'
+    ]
+  },
   {
     slug: 'brand-experience-lab',
-    icon: 'BI',
-    title: 'Brand & Experience Lab',
-    tagline: 'Design that doesn’t just look good — it performs.',
+    title: 'Brand Experience Lab',
+    tagline: 'Crafting memorable brands and digital experiences.',
     desc: 'We craft high-impact brand identities and user experiences that turn visitors into customers and ideas into memorable brands.',
     points: [
       'Brand Identity & Logo Systems',
@@ -54,8 +62,8 @@ export const services = [
   },
   {
     slug: 'product-tech-lab',
-    title: 'Product & Tech Lab',
-    tagline: 'Built for speed. Designed to scale.',
+    title: 'Product Tech Lab',
+    tagline: 'Engineering scalable products built for growth.',
     desc: 'We build fast, scalable digital products engineered to support growth, performance, and long-term success.',
     points: [
       'High-Performance Websites',
@@ -66,9 +74,8 @@ export const services = [
   },
   {
     slug: 'content-growth-lab',
-    icon: 'CG',
-    title: 'Content & Growth Lab',
-    tagline: 'Attention → Engagement → Growth.',
+    title: 'Content Growth Lab',
+    tagline: 'Transforming attention into engagement and revenue.',
     desc: 'We help you attract, engage, and convert your audience through strategic content and growth-driven systems.',
     points: [
       'Short-form Content (Reels / Shorts)',
@@ -79,9 +86,8 @@ export const services = [
   },
   {
     slug: 'launch-lab',
-    icon: 'LL',
     title: 'Launch Lab',
-    tagline: 'From idea to launch — faster than ever.',
+    tagline: 'From concept to launch, faster and smarter.',
     desc: 'We help you turn ideas into real products by handling everything from branding to launch and growth setup.',
     points: [
       'MVP Development',
@@ -89,21 +95,8 @@ export const services = [
       'Landing Pages & Funnels',
       'Go-to-Market Strategy'
     ]
-  },
-  {
-    slug: 'ai-automation-lab',
-    icon: 'AA',
-    title: 'AI & Automation Lab',
-    tagline: 'Work smarter. Scale faster.',
-    desc: 'We design intelligent systems that automate workflows, enhance customer experience, and reduce manual effort for businesses and creators.',
-    points: [
-      'AI Chatbot Development',
-      'Business Process Automation',
-      'WhatsApp / Instagram Automation',
-      'Creator Workflow Systems',
-      'Lead Generation Automation'
-    ]
   }
+ 
 ];
 
 export const projects = [
@@ -144,30 +137,30 @@ export const teamMembers = [
     name: 'Gokul Raj ',
     role: 'Founder & Strategy Lead',
     image: gokul,
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
+    linkedin: 'https://www.linkedin.com/in/gokulraj-gimzr/',
+    instagram: 'https://www.instagram.com/gokul.docx/'
   },
     {
     name: 'Divakar',
     role: 'Creative Innovation Lead',
     image: diva,
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
+    linkedin: 'https://www.linkedin.com/in/divakargwork/',
+    instagram: 'https://www.instagram.com/divakarjk/'
   },
     {
     name: 'Jayashree ',
     role: 'Client Success & Finance Lead',
     image: ja,
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
+    linkedin: 'https://www.linkedin.com/in/jayashreevenkatesan/',
+    instagram: 'https://www.instagram.com/_jayashree_24/'
   },
 
   {
     name: 'Gunasekar',
     role: 'Growth & Operations Lead',
     image: Guna,
-    linkedin: 'https://www.linkedin.com',
-    instagram: 'https://www.instagram.com'
+    linkedin: 'https://www.linkedin.com/in/gunasekar-v-3a4270227/',
+    instagram: 'https://www.instagram.com/_._.comrade_.boy_._/'
   }
   
 ];
@@ -211,10 +204,11 @@ export const footerCols = [
   {
     title: 'Services',
     links: [
-      { label: 'Brand Identity', to: '/services' },
-      { label: 'Motion Design', to: '/services' },
-      { label: 'Web Design', to: '/services' },
-      { label: 'Social Content', to: '/services' }
+      { label: 'Brand & Experience Lab', to: '/services' },
+      { label: 'Product & Tech Lab', to: '/services' },
+      { label: 'Content & Growth Lab', to: '/services' },
+      { label: 'Launch Lab', to: '/services' },
+       { label: 'AI & Automation Lab', to: '/services' }
     ]
   },
   {
