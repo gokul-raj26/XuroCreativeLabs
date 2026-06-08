@@ -37,6 +37,9 @@ export default function Home() {
           {timeline.slice(0, 2).map((item) => (
             <article key={item.year} className="glass-panel rounded-sm p-6">
               <p className="font-heading text-sm uppercase tracking-[0.16em] text-neon">{item.year}</p>
+              {item.tagline && (
+                <p className="mt-2 text-base font-semibold text-neon">{item.tagline}</p>
+              )}
               <p className="mt-2 text-sm text-muted">{item.text}</p>
             </article>
           ))}

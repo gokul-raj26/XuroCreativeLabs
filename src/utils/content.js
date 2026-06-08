@@ -15,27 +15,35 @@ export const navLinks = [
 export const stats = [
   { value: '140+', label: 'Projects Launched' },
   { value: '98%', label: 'Client Satisfaction' },
-  { value: '6+', label: 'Years of Excellence' },
-  { value: '25+', label: 'Industry Awards' }
+  { value: '6+', label: 'Years of Excellence' }
 ];
 
 export const timeline = [
   {
     year: '2021',
-    text: 'Started as a freelance studio, earning trust through premium creative work and dependable delivery.'
+    tagline: 'Building trust through freelancing',
+    text: 'We started our journey as freelancers, taking on projects one by one and building trust with our clients through quality work and reliability.'
+
   },
   {
     year: '2023',
-    text: 'Grew into a dedicated team of four, built stronger structures, and refined our agency-quality workflows.'
+    tagline: 'Growing Into a Team',
+    text: 'As demand grew, we expanded to a team of 4 members. Working together, we realized we had something special—a collaborative spirit combined with strong individual skills. We began structuring ourselves as a proper agency, establishing processes and standards that helped us scale our capabilities and deliver better results.'
   },
   {
     year: '2024',
-    text: 'Launched Xuro CreativeLabs as a startup-led creative lab, blending freelancer agility with company-grade service.'
+    tagline: 'Launching Xuro Creative Labs',
+    text: 'We officially launched Xuro Creative Labs, transforming years of freelance experience into a structured creative and technology agency focused on helping businesses grow through design, technology, content, and automation.'
+  },
+  {
+    year: 'Now',
+    tagline: 'Empowering Talent. Building the Future.',
+    text: 'we operate as a startup focused on connecting quality freelancers with meaningful projects while empowering the next generation of creative professionals.'
   }
-];
+]
 
 export const services = [
-   {
+  {
     slug: 'ai-automation-lab',
     title: 'AI Automation Lab',
     tagline: 'Automating workflows. Amplifying results.',
@@ -96,15 +104,40 @@ export const services = [
       'Go-to-Market Strategy'
     ]
   }
- 
+
 ];
 
 export const projects = [
-  { id: '01', category: 'Branding', name: 'TechPulse Rebrand', summary: 'A complete identity overhaul for a SaaS growth push.' },
-  { id: '02', category: 'Campaign', name: 'Launchpad Campaign', summary: 'A multi-channel launch with motion-first storytelling.' },
-  { id: '03', category: 'Web Platform', name: 'Orbis Digital Platform', summary: 'A fast and modular product site with enterprise UX.' },
-  { id: '04', category: 'Packaging', name: 'AuraCraft Product Line', summary: 'Premium shelf language for a new personal care line.' },
-  { id: '05', category: 'Social System', name: 'NeoBank Content Stack', summary: 'A full social design system for weekly campaign output.' }
+  {
+    id: "01",
+    category: "Branding",
+    name: "TechPulse Rebrand",
+    summary: "A complete identity overhaul for a SaaS growth push.",
+  },
+  {
+    id: "02",
+    category: "Campaign",
+    name: "Launchpad Campaign",
+    summary: "A multi-channel launch with motion-first storytelling.",
+  },
+  {
+    id: "03",
+    category: "Web Platform",
+    name: "Orbis Digital Platform",
+    summary: "A fast and modular product site with enterprise UX.",
+  },
+  {
+    id: "04",
+    category: "Packaging",
+    name: "AuraCraft Product Line",
+    summary: "Premium shelf language for a new personal care line.",
+  },
+  {
+    id: "05",
+    category: "Social System",
+    name: "NeoBank Content Stack",
+    summary: "A full social design system for weekly campaign output.",
+  },
 ];
 
 export const testimonials = [
@@ -140,14 +173,14 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/gokulraj-gimzr/',
     instagram: 'https://www.instagram.com/gokul.docx/'
   },
-    {
+  {
     name: 'Divakar',
     role: 'Creative Innovation Lead',
     image: diva,
     linkedin: 'https://www.linkedin.com/in/divakargwork/',
     instagram: 'https://www.instagram.com/divakarjk/'
   },
-    {
+  {
     name: 'Jayashree ',
     role: 'Client Success & Finance Lead',
     image: ja,
@@ -162,7 +195,7 @@ export const teamMembers = [
     linkedin: 'https://www.linkedin.com/in/gunasekar-v-3a4270227/',
     instagram: 'https://www.instagram.com/_._.comrade_.boy_._/'
   }
-  
+
 ];
 
 export const contactLinks = {
@@ -208,7 +241,7 @@ export const footerCols = [
       { label: 'Product & Tech Lab', to: '/services' },
       { label: 'Content & Growth Lab', to: '/services' },
       { label: 'Launch Lab', to: '/services' },
-       { label: 'AI & Automation Lab', to: '/services' }
+      { label: 'AI & Automation Lab', to: '/services' }
     ]
   },
   {

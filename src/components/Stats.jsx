@@ -6,7 +6,7 @@ export default function Stats() {
   return (
     <section className="border-y border-[rgba(31,60,222,0.3)] bg-[rgba(31,60,222,0.07)]">
       <motion.div
-        className="section-shell grid grid-cols-2 gap-6 py-10 md:grid-cols-4"
+        className="section-shell grid grid-cols-2 gap-6 py-10 md:grid-cols-3"
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"

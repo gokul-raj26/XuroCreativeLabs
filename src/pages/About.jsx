@@ -52,6 +52,9 @@ export default function About() {
             {timeline.map((item) => (
               <motion.article key={item.year} variants={fadeUp} className="glass-panel rounded-sm p-6">
                 <p className="font-heading text-xs uppercase tracking-[0.18em] text-neon">{item.year}</p>
+                {item.tagline && (
+                  <p className="mt-2 text-base font-semibold text-neon">{item.tagline}</p>
+                )}
                 <p className="mt-2 text-sm leading-relaxed text-muted">{item.text}</p>
               </motion.article>
             ))}
