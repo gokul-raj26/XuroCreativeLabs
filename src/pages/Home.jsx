@@ -71,26 +71,6 @@ export default function Home() {
       </SectionWrapper>
 
       <SectionWrapper
-        id="projects-preview"
-        className="bg-bg"
-        eyebrow="Our Work"
-        title="Selected Projects"
-        subtitle="A curated slice of our recent brand, campaign, and product work."
-      >
-        <motion.div
-          className="mt-12 grid gap-3 md:grid-cols-3"
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-        >
-          {projects.map((project, index) => (
-            <ProjectCard key={project.id} project={project} featured={index === 0} />
-          ))}
-        </motion.div>
-      </SectionWrapper>
-
-      <SectionWrapper
         id="testimonials-preview"
         className="bg-bg2"
         eyebrow="Client Love"
