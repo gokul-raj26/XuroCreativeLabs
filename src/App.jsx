@@ -9,6 +9,7 @@ const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
 const Services = lazy(() => import('./pages/Services'));
 const Projects = lazy(() => import('./pages/Projects'));
+const ProjectDetailPage = lazy(() => import('./pages/ProjectDetailPage'));
 const Contact = lazy(() => import('./pages/Contact'));
 
 // SEO Landing Pages
@@ -45,6 +46,7 @@ function AppShell() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/:slug" element={<ProjectDetailPage />} />
             <Route path="/contact" element={<Contact />} />
             
             {/* SEO Landing Pages */}
